@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WGUApp</string>
+    <string name="title_activity_add_term">AddTerm</string>
+    <string name="add_term">Add Term</string>
+    <string name="add_term_button">Add Term</string>
+    <string name="title_activity_add_course_screen">AddCourseScreen</string>
+
+    <string name="assessmentTypePrompt">Choose a type</string>
+
+    <string-array name="assessmentType">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+
+    <string name="courseStatusPrompt">Choose a status</string>
+
+    <string-array name="courseStatus">
+        <item>Not Started</item>
+        <item>In Progress</item>
+        <item>Passed</item>
+    </string-array>
+</resources>

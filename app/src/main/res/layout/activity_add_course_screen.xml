@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlosespejo.wguapp.AddCourseScreen">
+
+    <TextView
+        android:id="@+id/courseTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="42dp"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/courseStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseTitleText"
+        android:layout_alignStart="@+id/courseTitleText"
+        android:layout_below="@+id/courseTitleText"
+        android:layout_marginTop="31dp"
+        android:text="Start Date" />
+
+    <TextView
+        android:id="@+id/courseEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseStartDate"
+        android:layout_alignStart="@+id/courseStartDate"
+        android:layout_below="@+id/courseStartDate"
+        android:layout_marginTop="33dp"
+        android:text="Anticipated End Date" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseEndDate"
+        android:layout_alignStart="@+id/courseEndDate"
+        android:layout_below="@+id/courseEndDate"
+        android:layout_marginTop="33dp"
+        android:text="Course Status" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Add Course" />
+
+    <EditText
+        android:id="@+id/courseTitleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignTop="@+id/courseTitleText"
+        android:inputType="text"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/courseDateTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignTop="@+id/courseStartDate"
+        android:text="Select Date" />
+
+    <TextView
+        android:id="@+id/courseDateTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/courseEndDate"
+        android:layout_alignBottom="@+id/courseEndDate"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/courseEndDate"
+        android:layout_toRightOf="@+id/courseEndDate"
+        android:text="Select Date" />
+
+    <EditText
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/courseStartDate"
+        android:layout_alignRight="@+id/courseStartDate"
+        android:layout_below="@+id/Status"
+        android:layout_marginTop="40dp"
+        android:text="Notes" />
+
+    <Spinner
+
+        android:id="@+id/addCourseStatusDropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:entries="@array/courseStatus"
+        android:prompt="@string/courseStatusPrompt"
+        android:layout_alignLeft="@+id/courseDateTextView2"
+        android:layout_alignStart="@+id/courseDateTextView2"
+        android:layout_alignTop="@+id/Status"/>
+
+
+    <EditText
+        android:id="@+id/courseNotesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignLeft="@+id/courseDateTextView1"
+        android:layout_alignStart="@+id/courseDateTextView1"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/courseNotesInput"
+        android:layout_marginTop="71dp"
+        android:text="Cancel"
+        android:onClick="cancel"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button9"
+        android:layout_toEndOf="@+id/courseTitleInput"
+        android:layout_toRightOf="@+id/courseTitleInput"
+        android:text="Add Course"
+        android:onClick="addCourse"/>
+
+</RelativeLayout>

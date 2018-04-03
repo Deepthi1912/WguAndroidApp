@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:backgroundTint="?android:attr/colorActivatedHighlight"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.carlosespejo.wguapp.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:gravity="center"
+        android:text="WGU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goToTermsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToTerms"
+        android:layout_weight="0.03"
+        android:text="Terms" />
+
+    <Button
+        android:id="@+id/goToCoursesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Courses"
+        android:layout_weight="0.03"
+        android:onClick="goToCourses"/>
+
+    <Button
+        android:id="@+id/goToAssessmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="Assessments"
+        android:onClick="goToAssessments"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+</LinearLayout>
